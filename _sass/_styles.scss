@@ -1,0 +1,76 @@
+$orange-red: #c23700;
+$light-yellow: #ffffbd;
+
+
+body {
+  font-family: "proxima-nova",sans-serif;
+  display:flex;
+}
+
+h1 {
+  font-weight:light;
+}
+
+.container {
+  max-width:540px;
+  margin:auto;
+  font-size:22px;
+
+  p {
+    line-height:1.3em;
+  }
+}
+
+a {
+  color:$orange-red;
+  text-decoration:none;
+  border-bottom:1px solid;
+}
+
+a:hover {
+  background-color:$light-yellow;
+}
+
+.highlighted {
+  background-color: $light-yellow;
+}
+
+input {
+  font-family: "proxima-nova",sans-serif;
+}
+
+.avatar img{
+  background-color:red;
+  border-radius:100%;
+  width:75px;
+  height:75px;
+  margin-top:20px;
+}
+
+form#revue-form {
+  label {
+    font-size:14px;
+  }
+  input[type="text"], input[type="email"] {
+    // background-color:red;
+    border:none;
+    border:1px solid #eee;
+    border-radius:4px;
+    padding:8px;
+    font-size:14px;
+  }
+  input[type="submit"] {
+    border:none;
+    padding:8px;
+    border-radius:4px;
+    font-size:14px;
+    cursor:pointer;
+    &:hover {
+      background-color:#eee;
+    }
+  }
+}
+
+@import 'modal.scss';
+// @import 'live-status.scss';
+// @import 'vertical-timeline.scss';

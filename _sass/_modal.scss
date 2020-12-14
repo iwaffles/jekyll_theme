@@ -1,0 +1,98 @@
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    // display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    &.is-active {
+        display:flex;
+    }
+}
+
+/* Modal Content/Box */
+.modal-content {
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch; /* Avoid having to use 2 finger scroll on iOS    */
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius:4px;
+    max-height:80vh;
+    // max-height:80%;
+    width: fit-content;
+    min-width: 80%;
+    max-width: 400px;
+    overflow:scroll;
+    iframe {
+        overflow:hidden;
+        min-height:100vh;
+    }
+    .attribution {
+        text-align:center;
+        color:#ccc;
+        a {
+            color: rgba(194, 55, 0, 0.53);
+            &:hover {
+                color: #c23700;
+            }
+        }
+    }
+}
+
+/* The Close Button */
+.modal-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    button {
+        background-color: #eee;
+        border-color: #dbdbdb;
+        border-width: 1px;
+        color: #363636;
+        cursor: pointer;
+        justify-content: center;
+        padding-bottom: calc(.375em - 1px);
+        padding-left: .75em;
+        padding-right: .75em;
+        padding-top: calc(.375em - 1px);
+        text-align: center;
+        white-space: nowrap;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        align-items: center;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        box-shadow: none;
+        display: inline-flex;
+        font-size: 1rem;
+        height: 2.25em;
+        justify-content: flex-start;
+        line-height: 1.5;
+        padding-bottom: calc(.375em - 1px);
+        padding-left: calc(.625em - 1px);
+        padding-right: calc(.625em - 1px);
+        padding-top: calc(.375em - 1px);
+        position: relative;
+        vertical-align: top;
+    }
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
  <html>
     <head>
-        <title>Example Site</title>
+        <title>{{ page.title | default: site.title }}</title>
         <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     </head>
     <body>
